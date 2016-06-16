@@ -1,0 +1,11 @@
+print("----print----\n")
+print("Hello, Ruby1.\n")
+print("Hello, Ruby2.\n")
+print("Hello, Ruby3.")
+print("Hello, Ruby4.\n")
+
+puts("-----put----")
+puts("Hello, Ruby1.")
+puts("Hello, Ruby2.")
+puts("Hello, Ruby3.")
+puts("Hello, Ruby4.")
