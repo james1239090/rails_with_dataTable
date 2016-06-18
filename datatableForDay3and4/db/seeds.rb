@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-create.products = for i in  1..20 do
+create_products = for i in  1..20 do
   Product.create!([title:"Product no.#{i}",price: "#{i*i}" ,description:"這是用種子建立的第#{i}個產品"])
-
 end
