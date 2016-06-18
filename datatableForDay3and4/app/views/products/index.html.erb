@@ -1,2 +1,19 @@
 <h2>產品列表</h2>
-
+<table id="products">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>名稱</th>
+      <th>價錢</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <th><%= product.id %></th>
+        <th><%= product.title %></th>
+        <th><%= product.price %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
