@@ -1,11 +1,17 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = Product.all
+    #@products = Product.all
+    respond_to do |format|
+
+
+      format.html
+      format.json { render json: ProductDatatable.new(view_context) }
+    end
   end
 
   def create
-    @product = Prodcut.new(product_params)
+    @product = Product.new(product_params)
 
     if @product.save
       rediret_to product_path
@@ -16,11 +22,11 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Prodcut.new
+    @product = Product.new
   end
 
   def show
-    @product = Prodcut.find(params[:id])
+    @product = Product.find(params[:id])
   end
 
 end

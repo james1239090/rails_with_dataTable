@@ -4,6 +4,8 @@ gem 'awesome_rails_console'
 gem 'bootstrap-sass'
 gem 'jquery-datatables-rails', '~> 3.3.0'
 gem 'ajax-datatables-rails'
+gem 'kaminari'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
