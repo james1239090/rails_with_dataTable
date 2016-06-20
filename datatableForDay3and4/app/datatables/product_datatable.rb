@@ -1,12 +1,12 @@
 class ProductDatatable < AjaxDatatablesRails::Base
   include AjaxDatatablesRails::Extensions::Kaminari
   def sortable_columns
-    # 可排序的欄位，必填，否則會跳錯
+    # 可排序的欄位，必填，Model名稱需大寫，否則會跳
     @sortable_columns ||= ['Product.id' ,'Product.title', 'Product.price']
   end
 
   def searchable_columns
-    # 可搜尋的欄位，必填，否則會跳錯
+    # 可搜尋的欄位，必填，Model名稱需大寫，否則會跳
     @searchable_columns ||= ['Product.id' ,'Product.title', 'Product.price']
   end
 
