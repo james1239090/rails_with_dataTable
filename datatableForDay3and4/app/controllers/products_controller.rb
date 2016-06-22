@@ -1,11 +1,15 @@
 class ProductsController < ApplicationController
 
   def index
-    #@products = Product.all
+    # @products = Product.all
     respond_to do |format|
       format.html
       format.json { render json: ProductDatatable.new(view_context) }
     end
+  end
+
+  def show
+    @product = Product.find(params[:id])
   end
 
   def create

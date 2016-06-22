@@ -1,0 +1,19 @@
+<h2>商店列表</h2>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>名稱</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stores.each do |store|%>
+      <tr>
+        <td><%= store.id %></td>
+        <td><%= link_to(store.title, store_path(store)) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
